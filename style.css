@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Josefin+Sans:wght@200&family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Oswald:wght@200&family=Poppins:wght@600;700;900&family=Raleway:ital,wght@0,300;0,400;0,500;1,400&family=Roboto:wght@900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: #8b9bb9;
+  position: relative;
+  display: flex;
+}
+nav{
+    height: 100px;  
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    font-weight: 100;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.icon-sec{
+    height: 100px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 999;
+}
+.icon-sec button{
+    background-color: transparent;
+    border: none;
+    font-size: 5vw;
+    color: white;
+    cursor: pointer;
+    z-index: 9999;
+}
+.page1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 8;
+}
+.page1 img {
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.page1 video {
+    position: absolute;
+  height: 100%;
+  object-fit: cover;
+}
+.page2 {
+  z-index: 9;
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 47%;
+    background-color: #4464a02c;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-sec {
+  height: 150px;
+  width: 100%;
+  padding-left: 3vw;
+}
+.logo-sec img {
+  height: 100%;
+  animation-name: anime;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes anime {
+    from{
+        transform: scale(1.2) rotate(-360deg);
+    }
+    to{
+        transform: scale(0.5)rotate(360deg);
+    }
+}
+.text-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+  width: 40%;
+  margin: 2vw 0;
+  z-index: 999;
+}
+.line{
+    height: fit-content;
+    overflow: hidden;
+}
+.line h1{
+  font-size: 6vw;
+  line-height: 7vw;
+  color: white;
+  text-transform: uppercase;
+}
+.bottom-sec {
+  height: 100px;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5vw;
+}
+.right {
+    height: fit-content;
+    overflow: hidden;
+    z-index: 999;
+}
+.right h2 {
+  text-transform: capitalize;
+  border-right: 2px solid rgba(255, 255, 255, 0.478);
+  padding: 0.3vw;
+  color: white;
+  z-index: 9999;
+  font-weight: 200;
+  text-transform: uppercase;
+}
